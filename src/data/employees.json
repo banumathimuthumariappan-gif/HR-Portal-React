@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "employeeId": "EMP1",
+    "name": "Aarav Sharma",
+    "email": "aarav@abc.com",
+    "password": "aarav123",
+    "department": "Software Development",
+    "designation": "Frontend Developer",
+    "phone": "+91 98765 43210",
+    "joiningDate": "2022-06-15",
+    "manager": "",
+    "onboarded": true
+  },
+  {
+    "id": 2,
+    "employeeId": "EMP2",
+    "name": "Sophia Johnson",
+    "email": "sophia@abc.com",
+    "password": "sophia123",
+    "department": "Human Resources",
+    "designation": "HR Executive",
+    "phone": "+1 408-555-2102",
+    "joiningDate": "2023-01-11",
+    "manager": "",
+    "onboarded": true
+  },
+  {
+    "id": 3,
+    "employeeId": "EMP3",
+    "name": "Rohan Kumar",
+    "email": "rohan@abc.com",
+    "password": "rohan123",
+    "department": "Finance",
+    "designation": "Accountant",
+    "phone": "+91 90123 55678",
+    "joiningDate": "2021-09-01",
+    "manager": "",
+    "onboarded": true
+  },
+  {
+    "id": 4,
+    "employeeId": "EMP4",
+    "name": "Emily Davis",
+    "email": "emily@abc.com",
+    "password": "emily123",
+    "department": "Marketing",
+    "designation": "Marketing Analyst",
+    "phone": "+1 646-555-7789",
+    "joiningDate": "2022-04-25",
+    "manager": "",
+    "onboarded": true
+  },
+  {
+    "id": 5,
+    "employeeId": "EMP5",
+    "name": "Mohammed Ali",
+    "email": "mohammed@abc.com",
+    "password": "mohammed123",
+    "department": "IT Support",
+    "designation": "System Administrator",
+    "phone": "+971 50 345 7892",
+    "joiningDate": "2020-12-09",
+    "manager": "",
+    "onboarded": true
+  }
+]

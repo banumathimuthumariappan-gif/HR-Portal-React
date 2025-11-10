@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import HRDashboard from "./components/HRDashboard";
+import EmployeeDashboard from "./components/EmployeeDashboard";
+import EmployeeDetails from "./components/EmployeeDetails";
+import LeaveRequest from "./components/LeaveRequest";
+import "./App.css";
 
 function App() {
+  const role = localStorage.getItem("role");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+
+        <Route
+          path="/hr"
+          element={role === "HR" ? <HRDashboard /> : <Navigate to="/" />}
+        />
+        <Route
+          path="/employee"
+          element={
+            role === "Employee" ? <EmployeeDashboard /> : <Navigate to="/" />
+          }
+        />
+        <Route
+          path="/employee-details"
+          element={
+            role === "HR" ? <EmployeeDetails /> : <Navigate to="/" />
+          }
+        />
+        <Route
+          path="/leave"
+          element={
+            role === "Employee" ? <LeaveRequest /> : <Navigate to="/" />
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
